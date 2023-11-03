@@ -1,0 +1,53 @@
+.Cart {
+    background-color: #ffe4e1; /* Coquille d'œuf pour l'arrière-plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Cart h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff6b6b; /* Rose pastel pour le titre */
+  }
+  
+  .Cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Cart li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc; /* Bordure séparatrice en gris */
+    padding: 10px 0;
+  }
+  
+  .Cart li:last-child {
+    border-bottom: none; /* Supprimer la bordure du dernier élément */
+  }
+  
+  .Cart span {
+    flex: 1; /* Les éléments se développent pour remplir l'espace */
+  }
+  
+  .Cart button {
+    background-color: #ff6b6b; /* Bouton rose pastel */
+    color: #fff; /* Texte blanc */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .Cart button:hover {
+    background-color: #ff4f4f; /* Survol du bouton en rose pastel plus foncé */
+  }
+  .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff6b6b; /* Rose pastel ou une autre couleur de votre choix */
+    margin-top: 10px;
+    text-align: right;
+  }  

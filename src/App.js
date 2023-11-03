@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { CartProvider } from './CartContext';
+import './styles/App.css';
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Products from './components/Product/Products';
+import Cart from './components/Cart/Cart';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <CartProvider>
+       <Router>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand as={Link} to="/">Boutique</Navbar.Brand>
+          <Nav className="ms-auto"> {/* Utilisation de ms-auto pour aligner à droite */}
+            <Nav.Link as={Link} className="cart-link" to="/cart">Panier</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+
+      <Routes>
+        <Route path="/" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="*"
+          element={<h1>404: Page not found</h1>}
+        />
+      </Routes>
+    </Router>
+    <ToastContainer />
+    </CartProvider>
+    
   );
 }
 

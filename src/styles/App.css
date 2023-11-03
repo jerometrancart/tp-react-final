@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ajout de la police pour les titres h1 à h6 */
+.Products h1,
+.Products h2,
+.Products h3,
+.Products h4,
+.Products h5,
+.Products h6 {
+  font-family: 'YourFontName', sans-serif; /* Remplacez 'YourFontName' par le nom de la police de votre choix */
+  /* Si la police n'est pas installée sur l'utilisateur, vous pouvez spécifier des polices de secours comme suit : */
+  font-family: 'YourFontName', Arial, sans-serif;
+}
+
+/* Styles de titres h1 à h6 */
+.Products h1 {
+  font-size: 2rem;
+  color: #000; /* Texte noir */
+}
+
+.Products h2 {
+  font-size: 1.8rem;
+  color: #000; /* Texte noir */
+}
+
+.Products h3 {
+  font-size: 1.6rem;
+  color: #000; /* Texte noir */
+}
+
+.Products h4 {
+  font-size: 1.4rem;
+  color: #000; /* Texte noir */
+}
+
+.Products h5 {
+  font-size: 1.2rem;
+  color: #000; /* Texte noir */
+}
+
+.Products h6 {
+  font-size: 1rem;
+  color: #000; /* Texte noir */
+}
+
+/* styles.css */
+
+.cart-link {
+  color: #ffffff; /* Texte blanc pour un meilleur contraste avec le fond */
+  background-color: #ff0000; /* Fond rouge pour le lien */
+  font-weight: bold; /* Texte en gras */
+  font-size: 1.2rem; /* Taille de police plus grande */
+  text-decoration: none; /* Supprime la soulignement du lien */
+  padding: 8px 30px; /* Ajoute de l'espace autour du texte */
+  border-radius: 5px; /* Coins arrondis */
+}
+
+.cart-link:hover {
+  color: black; /* Couleur rouge plus claire au survol */
+  text-decoration: underline; /* Ajoute une soulignement au survol */
+}
